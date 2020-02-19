@@ -1,3 +1,5 @@
+'use strict';
+
 const deliveryChina = 100;
 const deliveryChile = 250;
 const deliveryAustralia = 170;
