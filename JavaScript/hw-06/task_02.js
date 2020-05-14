@@ -1,9 +1,10 @@
 'use strict';
-
-Получить массив объектов пользователей по цвету глаз(поле eyeColor).
+import users from './users.js';
 
 const getUsersWithEyeColor = (users, color) => {
-  // твой код
+  return users
+    .filter(users => users.eyeColor === color)
+    .map(usres => usres.name);
 };
 
 console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]

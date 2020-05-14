@@ -1,9 +1,12 @@
-'use strict';
+// Массив имен(поле name) людей, отсортированных в зависимости от количества их друзей(поле friends)
 
-Массив имен(поле name) людей, отсортированных в зависимости от количества их друзей(поле friends)
+'use strict';
+import users from './users.js';
 
 const getNamesSortedByFriendsCount = users => {
-  // твой код
+  return users.sort((userMin, userMax) =>
+      userMin['friends'].length - userMax['friends'].length, )
+    .map(users => users.name);
 };
 
 console.log(getNamesSortedByFriendsCount(users));
